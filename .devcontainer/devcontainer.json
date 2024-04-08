@@ -1,0 +1,19 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "ms-python.python",
+        "dracula-theme.theme-dracula",
+        "oderwat.indent-rainbow",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode"
+      ],
+      "editor.fontSize": 18
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash",
+  "postCreateCommand": "nvm install --lts && npx create vite@latest app --template react-ts",
+  "postCreateCommand": "cd app && npm install && npm run dev"
+}
